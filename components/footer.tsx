@@ -14,9 +14,9 @@ export function Footer() {
   ]
 
   const socialLinks = [
-    { icon: Github, href: "https://github.com/johndoe", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com/in/johndoe", label: "LinkedIn" },
-    { icon: Instagram, href: "https://instagram.com/johndoe", label: "Instagram" },
+    { icon: Github, href: "https://github.com/farwa", label: "GitHub" },
+    { icon: Linkedin, href: "https://linkedin.com/in/farwa", label: "LinkedIn" },
+    { icon: Instagram, href: "https://instagram.com/farwa", label: "Instagram" },
     { icon: Mail, href: "mailto:john.doe@example.com", label: "Email" },
   ]
 
@@ -27,7 +27,7 @@ export function Footer() {
           {/* Brand */}
           <div>
             <Link href="/" className="text-2xl font-bold text-primary mb-4 block">
-              John Doe
+              Farwa
             </Link>
             <p className="text-muted-foreground mb-4">
               Creative Designer & Full-Stack Developer crafting beautiful digital experiences.
@@ -70,7 +70,7 @@ export function Footer() {
         </div>
 
         <div className="border-t mt-8 pt-8 text-center text-muted-foreground">
-          <p>&copy; {currentYear} John Doe. All rights reserved.</p>
+          <p>&copy; {currentYear} Farwa . All rights reserved.</p>
         </div>
       </div>
     </footer>

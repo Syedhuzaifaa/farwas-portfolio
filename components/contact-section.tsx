@@ -11,6 +11,7 @@ import { Mail, Phone, MapPin, Send, Github, Linkedin, Instagram } from "lucide-r
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { useToast } from "@/hooks/use-toast"
+import { submitContactForm } from "@/app/actions/contact" // adjust the path if needed
 
 export function ContactSection() {
   const [formData, setFormData] = useState({
@@ -21,21 +22,35 @@ export function ContactSection() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const { toast } = useToast()
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000))
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault()
+  setIsSubmitting(true)
 
+  const formDataToSend = new FormData()
+  formDataToSend.append("name", formData.name)
+  formDataToSend.append("email", formData.email)
+  formDataToSend.append("message", formData.message)
+
+  const result = await submitContactForm(formDataToSend)
+
+  if (result.success) {
     toast({
-      title: "Message sent!",
-      description: "Thank you for your message. I'll get back to you soon.",
+      title: "Message sent! 🎉",
+      description: result.message,
     })
-
     setFormData({ name: "", email: "", message: "" })
-    setIsSubmitting(false)
+  } else {
+    toast({
+      title: "Failed to send",
+      description: result.message || "Something went wrong.",
+      variant: "destructive",
+    })
   }
+
+  setIsSubmitting(false)
+}
+
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData((prev) => ({
@@ -69,17 +84,17 @@ export function ContactSection() {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com/johndoe",
+      href: "https://github.com/farwa",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com/in/johndoe",
+      href: "https://linkedin.com/in/farwa",
     },
     {
       icon: Instagram,
       label: "Instagram",
-      href: "https://instagram.com/johndoe",
+      href: "https://instagram.com/farwa",
     },
   ]
 

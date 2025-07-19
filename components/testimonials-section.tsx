@@ -9,7 +9,7 @@ export function TestimonialsSection() {
   const testimonials = [
     {
       id: 1,
-      name: "Sarah Johnson",
+      name: "Farwa  Johnson",
       role: "Marketing Director",
       company: "TechStart Inc.",
       image: "/placeholder.svg?height=60&width=60",

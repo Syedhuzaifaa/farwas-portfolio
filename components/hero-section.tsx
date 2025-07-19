@@ -71,7 +71,7 @@ useEffect(() => {
     return (
       <section
         id="home"
-        className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-pink-100 via-purple-50 to-rose-100 dark:from-gray-900 dark:via-purple-900/20 dark:to-pink-900/20"
+        className="pt-12 min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-pink-100 via-purple-50 to-rose-100 dark:from-gray-900 dark:via-purple-900/20 dark:to-pink-900/20"
       >
         {/* Animated Background Elements */}
         <div className="absolute inset-0">
@@ -274,7 +274,7 @@ useEffect(() => {
                 transition={{ duration: 3, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
               />
               <Image
-                src="/placeholder.svg?height=200&width=200"
+                src="/farwa.jpeg?height=200&width=200"
                 alt="Creative Designer"
                 width={200}
                 height={200}
@@ -312,7 +312,7 @@ useEffect(() => {
               animate={{ backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"] }}
               transition={{ duration: 3, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
             >
-              Sarah
+              Farwa
             </motion.span>
           </motion.h1>
 

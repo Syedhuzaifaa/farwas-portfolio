@@ -195,7 +195,7 @@ export const portfolioData: PortfolioItem[] = [
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe"],
     year: "2024",
     liveUrl: "https://example-ecommerce.com",
-    githubUrl: "https://github.com/johndoe/ecommerce",
+    githubUrl: "https://github.com/farwa/ecommerce",
   },
   {
     id: "14",

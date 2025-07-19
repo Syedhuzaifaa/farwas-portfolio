@@ -9,13 +9,13 @@ import { Footer } from "@/components/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "John Doe - Creative Designer & Full-Stack Developer",
+  title: "Farwa - Creative Designer & Full-Stack Developer",
   description:
-    "Portfolio of John Doe - Creative Designer and Full-Stack Web Developer specializing in UI/UX Design, Logo Design, and Modern Web Applications",
+    "Portfolio of Farwa - Creative Designer and Full-Stack Web Developer specializing in UI/UX Design, Logo Design, and Modern Web Applications",
   keywords: ["designer", "developer", "portfolio", "UI/UX", "web development", "logo design"],
-  authors: [{ name: "John Doe" }],
+  authors: [{ name: "Farwa " }],
   openGraph: {
-    title: "John Doe - Creative Designer & Full-Stack Developer",
+    title: "Farwa  - Creative Designer & Full-Stack Developer",
     description: "Portfolio showcasing creative design and web development work",
     type: "website",
   },

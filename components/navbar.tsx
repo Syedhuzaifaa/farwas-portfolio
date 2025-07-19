@@ -80,7 +80,7 @@ export function Navbar() {
                   transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
                 />
               </motion.div>
-              <span className="gradient-text">Sarah</span>
+              <span className="gradient-text">Farwa </span>
             </Link>
           </motion.div>
 
