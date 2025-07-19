@@ -135,7 +135,7 @@ export function PortfolioGallery({ items, title, description }: PortfolioGallery
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.8, opacity: 0 }}
-              className="bg-white dark:bg-gray-800 rounded-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto relative"
+              className="bg-white dark:bg-gray-800 rounded-2xl max-w-xl w-full max-h-[90vh] overflow-y-auto relative"
               onClick={(e) => e.stopPropagation()}
             >
               <Button
@@ -153,7 +153,7 @@ export function PortfolioGallery({ items, title, description }: PortfolioGallery
                   alt={selectedItem.title}
                   width={800}
                   height={500}
-                  className="w-full h-64 md:h-80 object-cover rounded-t-2xl"
+                  className="w-full h-64 md:h-80 object-contain rounded-t-2xl"
                 />
                 <Badge className="absolute top-4 left-4 bg-pink-500/90 text-white border-0">
                   {selectedItem.category}

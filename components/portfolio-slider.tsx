@@ -110,24 +110,21 @@ export function PortfolioSlider({ items, title, description }: PortfolioSliderPr
               <Card className="overflow-hidden border-0 shadow-2xl glow-effect-strong hover-lift">
                 <div className="relative">
                   <motion.div
-                    whileHover={{ scale: 1.05 }}
-                    transition={{ duration: 0.3 }}
-                    className="relative overflow-hidden"
+                    className="relative overflow-hidden shadow-xl" // always shows shadow
                   >
                     <Image
                       src={items[currentIndex].image || "/placeholder.svg"}
                       alt={items[currentIndex].title}
                       width={800}
                       height={500}
-                      className="w-full h-64 md:h-80 object-cover"
+                      className="w-full h-64 md:h-80 object-contain"
                     />
                     <motion.div
-                      className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"
-                      initial={{ opacity: 0 }}
-                      whileHover={{ opacity: 1 }}
-                      transition={{ duration: 0.3 }}
+                      className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-100"
                     />
+
                   </motion.div>
+
                   <div className="absolute bottom-4 left-4 right-4">
                     <motion.div
                       initial={{ y: 20, opacity: 0 }}
@@ -232,7 +229,7 @@ export function PortfolioSlider({ items, title, description }: PortfolioSliderPr
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
-            className="flex justify-center mt-6 gap-2 overflow-x-auto pb-2"
+            className="flex justify-center mt-6 gap-2 overflow-x-auto p-4"
           >
             {items.map((item, index) => (
               <motion.button
@@ -240,11 +237,10 @@ export function PortfolioSlider({ items, title, description }: PortfolioSliderPr
                 onClick={() => goToSlide(index)}
                 whileHover={{ scale: 1.1, y: -2 }}
                 whileTap={{ scale: 0.95 }}
-                className={`flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden border-2 transition-all ${
-                  index === currentIndex
-                    ? "border-pink-500 scale-110 shadow-lg glow-effect"
-                    : "border-gray-200 hover:border-pink-300"
-                }`}
+                className={`flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden border-2 transition-all ${index === currentIndex
+                  ? "border-pink-500 scale-110 shadow-lg glow-effect"
+                  : "border-gray-200 hover:border-pink-300"
+                  }`}
               >
                 <Image
                   src={item.image || "/placeholder.svg"}
@@ -272,9 +268,8 @@ export function PortfolioSlider({ items, title, description }: PortfolioSliderPr
                 onClick={() => goToSlide(index)}
                 whileHover={{ scale: 1.3 }}
                 whileTap={{ scale: 0.9 }}
-                className={`w-3 h-3 rounded-full transition-all ${
-                  index === currentIndex ? "bg-pink-500 scale-125 shadow-lg" : "bg-gray-300 hover:bg-pink-300"
-                }`}
+                className={`w-3 h-3 rounded-full transition-all ${index === currentIndex ? "bg-pink-500 scale-125 shadow-lg" : "bg-gray-300 hover:bg-pink-300"
+                  }`}
               />
             ))}
           </motion.div>
@@ -313,7 +308,7 @@ export function PortfolioSlider({ items, title, description }: PortfolioSliderPr
                   alt={selectedItem.title}
                   width={800}
                   height={500}
-                  className="w-full h-64 md:h-80 object-cover rounded-t-2xl"
+                  className="w-full h-64 md:h-80 object-contain rounded-t-2xl"
                 />
                 <Badge className="absolute top-4 left-4 bg-pink-500/90 text-white border-0">
                   {selectedItem.category}

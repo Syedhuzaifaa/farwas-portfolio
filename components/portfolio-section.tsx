@@ -33,30 +33,32 @@ export function PortfolioSection() {
 
         {/* Logo Design Slider */}
         <PortfolioSlider
+          items={presentationProjects}
+          title="📊 Presentation Design"
+          description="Professional presentations that communicate effectively"
+        />
+
+        {/* Poster Design Gallery */}
+         <PortfolioGallery
           items={logoProjects}
           title="✨ Logo Design"
           description="Brand identities that make lasting impressions"
         />
 
-        {/* Poster Design Gallery */}
+       
+
+        {/* Social Media Content Slider */}
+        {/* <PortfolioSlider
+          items={socialMediaProjects}
+          title="📱 Social Media Content"
+          description="Engaging content that boosts online presence"
+        /> */}
+
+        {/* Presentation Design Gallery */}
         <PortfolioGallery
           items={posterProjects}
           title="🎨 Poster Design"
           description="Eye-catching posters for events and campaigns"
-        />
-
-        {/* Social Media Content Slider */}
-        <PortfolioSlider
-          items={socialMediaProjects}
-          title="📱 Social Media Content"
-          description="Engaging content that boosts online presence"
-        />
-
-        {/* Presentation Design Gallery */}
-        <PortfolioGallery
-          items={presentationProjects}
-          title="📊 Presentation Design"
-          description="Professional presentations that communicate effectively"
         />
 
         {/* Website Projects Slider */}

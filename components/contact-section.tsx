@@ -63,19 +63,19 @@ const handleSubmit = async (e: React.FormEvent) => {
     {
       icon: Mail,
       label: "Email",
-      value: "john.doe@example.com",
+      value: "farwafaizan334@gmail.com",
       href: "mailto:john.doe@example.com",
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567",
+      value: "+92 308 8290018",
+      href: "",
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "New York, NY",
+      value: "Karachi , Pakistan",
       href: "#",
     },
   ]
@@ -84,17 +84,17 @@ const handleSubmit = async (e: React.FormEvent) => {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com/farwa",
+      href: "https://github.com/farwafaizan334@gmail",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com/in/farwa",
+      href: "https://linkedin.com/in/farwafaizan334@gmail",
     },
     {
       icon: Instagram,
       label: "Instagram",
-      href: "https://instagram.com/farwa",
+      href: "https://instagram.com/farwafaizan334@gmail",
     },
   ]
 
