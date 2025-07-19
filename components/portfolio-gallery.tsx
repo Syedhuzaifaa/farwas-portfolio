@@ -141,10 +141,10 @@ export function PortfolioGallery({ items, title, description }: PortfolioGallery
               <Button
                 variant="ghost"
                 size="icon"
-                className="absolute top-4 right-4 bg-white/80 hover:bg-white rounded-full z-10"
+                className="absolute  text-black dark:text-black top-4 right-4 bg-white/80 hover:bg-white rounded-full z-10"
                 onClick={closeModal}
               >
-                <X className="h-5 w-5" />
+                <X className="h-5 w-5 text-black dark:text-black" />
               </Button>
 
               <div className="relative">
@@ -164,18 +164,18 @@ export function PortfolioGallery({ items, title, description }: PortfolioGallery
                     <Button
                       variant="ghost"
                       size="icon"
-                      className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full z-10"
+                      className="absolute color-black dark:text-black left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full z-10"
                       onClick={prevModalImage}
                     >
-                      <ChevronLeft className="h-5 w-5" />
+                      <ChevronLeft className="h-5 w-5 text-black dark:text-black" />
                     </Button>
                     <Button
                       variant="ghost"
                       size="icon"
-                      className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full z-10"
+                      className="absolute text-black dark:text-black right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full z-10"
                       onClick={nextModalImage}
                     >
-                      <ChevronRight className="h-5 w-5" />
+                      <ChevronRight className="h-5 w-5 text-black dark:text-black" />
                     </Button>
                     <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/50 text-white text-xs px-2 py-1 rounded-full">
                       {currentModalImageIndex + 1} / {selectedItem.images.length}

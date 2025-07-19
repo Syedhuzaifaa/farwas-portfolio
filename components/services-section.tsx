@@ -21,13 +21,13 @@ export function ServicesSection() {
       features: ["Print Ready", "Digital Formats", "Creative Concepts", "Fast Turnaround"],
       category: "Design",
     },
-    {
-      icon: Share2,
-      title: "Social Media Content",
-      description: "Engaging social media posts and graphics that boost your online presence.",
-      features: ["LinkedIn Posts", "Instagram Graphics", "Facebook Covers", "Story Templates"],
-      category: "Design",
-    },
+    // {
+    //   icon: Share2,
+    //   title: "Social Media Content",
+    //   description: "Engaging social media posts and graphics that boost your online presence.",
+    //   features: ["LinkedIn Posts", "Instagram Graphics", "Facebook Covers", "Story Templates"],
+    //   category: "Design",
+    // },
     {
       icon: PenTool,
       title: "Presentation Design",
