@@ -2,9 +2,10 @@ export interface PortfolioItem {
   id: string
   title: string
   description: string
-  category: "logos" | "posters" | "social-media" | "presentations" | "websites"
-  image: string // Main thumbnail image
-  images?: string[] // Array of additional images for detailed view
+  category: "figma" | "logos" | "posters" | "social-media" | "presentations" | "websites"
+  image: string
+  images?: string[]
+  video?: string // <--- Add this
   technologies: string[]
   year: string
   liveUrl?: string
@@ -244,6 +245,31 @@ export const portfolioData: PortfolioItem[] = [
     liveUrl: "https://caketown.infinityfreeapp.com/",
     // githubUrl: "https://github.com/farwa/ecommerce",
   },
+
+  {
+    id: "20",
+    title: "Ice Cream Animation",
+    description: "A playful and colorful animation showcasing a ice cream unwrapping, designed to highlight motion graphics skills and evoke a fun summer vibe.",
+    category: "figma",
+    image: "/Screenshot 2025-08-08 211300.png",
+    video: "/Icecream Prototype.mp4", // <--- Path to your video
+    technologies: ["Figma", "Framer Motion"],
+    liveUrl: "https://www.figma.com/proto/gEoVajmCuDhng31P448NWq/pizza-Prototype?node-id=6-135&p=f&t=rTS9ahKqnvjINQCD-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=6%3A32",
+    year: "2024",
+  },
+  {
+    id: "19",
+    title: "Pizza Ordering UI – Animated Figma Design",
+    description: "An interactive pizza ordering interface built in Figma, featuring smooth transitions, micro-interactions, and modern visual elements to enhance user experience.",
+    category: "figma",
+    image: "/Screenshot 2025-08-08 211030.png",
+    video: "/b453dfd8-4fbd-4c6a-9621-4f1e9017d178 (online-video-cutter.com).mp4", // <--- Path to your video
+    technologies: ["Figma", "Framer Motion"],
+    liveUrl: "https://www.figma.com/proto/NLMAi95BxeQOQ1UUBk3xRi/Icecream-Prototype?node-id=4-120&p=f&t=4UwtCAT3wkWV1ck0-0&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=4%3A120",
+    year: "2024",
+  }
+
+
   // {
   //   id: "14",
   //   title: "Restaurant Website",

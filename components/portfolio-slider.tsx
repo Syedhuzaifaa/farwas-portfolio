@@ -112,13 +112,32 @@ export function PortfolioSlider({ items, title, description }: PortfolioSliderPr
                   <motion.div
                     className="relative overflow-hidden shadow-xl" // always shows shadow
                   >
-                    <Image
+                    {items[currentIndex].video ? (
+                      <video
+                        src={items[currentIndex].video}
+                        autoPlay
+                        muted
+                        loop
+                        controls
+                        className="w-full h-64 md:h-80 object-contain rounded-t-2xl"
+                      />
+                    ) : (
+                      <Image
+                        src={items[currentIndex].image || "/placeholder.svg"}
+                        alt={items[currentIndex].title}
+                        width={800}
+                        height={500}
+                        className="w-full h-64 md:h-80 object-contain"
+                      />
+                    )}
+
+                    {/* <Image
                       src={items[currentIndex].image || "/placeholder.svg"}
                       alt={items[currentIndex].title}
                       width={800}
                       height={500}
                       className="w-full h-64 md:h-80 object-contain"
-                    />
+                    /> */}
                     <motion.div
                       className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-100"
                     />
@@ -303,13 +322,32 @@ export function PortfolioSlider({ items, title, description }: PortfolioSliderPr
               </Button>
 
               <div className="relative">
-                <Image
+                {selectedItem.video ? (
+                  <video
+                    src={selectedItem.video}
+                    autoPlay
+                    muted
+                    loop
+                    controls
+                    className="w-full h-64 md:h-80 object-contain rounded-t-2xl"
+                  />
+                ) : (
+                  <Image
+                    src={selectedItem.images?.[currentModalImageIndex] || selectedItem.image || "/placeholder.svg"}
+                    alt={selectedItem.title}
+                    width={800}
+                    height={500}
+                    className="w-full h-64 md:h-80 object-contain rounded-t-2xl"
+                  />
+                )}
+
+                {/* <Image
                   src={selectedItem.images?.[currentModalImageIndex] || selectedItem.image || "/placeholder.svg"}
                   alt={selectedItem.title}
                   width={800}
                   height={500}
                   className="w-full h-64 md:h-80 object-contain rounded-t-2xl"
-                />
+                /> */}
                 <Badge className="absolute top-4 left-4 bg-pink-500/90 text-white border-0">
                   {selectedItem.category}
                 </Badge>

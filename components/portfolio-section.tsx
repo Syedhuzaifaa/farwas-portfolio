@@ -7,6 +7,7 @@ import { PortfolioGallery } from "./portfolio-gallery"
 
 export function PortfolioSection() {
   const logoProjects = portfolioData.filter((project) => project.category === "logos")
+  const figmaProjects = portfolioData.filter((project) => project.category === "figma")
   const posterProjects = portfolioData.filter((project) => project.category === "posters")
   const socialMediaProjects = portfolioData.filter((project) => project.category === "social-media")
   const presentationProjects = portfolioData.filter((project) => project.category === "presentations")
@@ -33,19 +34,31 @@ export function PortfolioSection() {
 
         {/* Logo Design Slider */}
         <PortfolioSlider
+          items={figmaProjects}
+          title="📊 Figma UI/UX"
+          description="Designing clean, user-friendly interfaces in Figma for web and mobile applications."
+        />
+        <PortfolioGallery
+          items={logoProjects}
+          title="✨ Logo Design"
+          description="Brand identities that make lasting impressions"
+        />
+        <PortfolioSlider
           items={presentationProjects}
           title="📊 Presentation Design"
           description="Professional presentations that communicate effectively"
         />
 
-        {/* Poster Design Gallery */}
-         <PortfolioGallery
-          items={logoProjects}
-          title="✨ Logo Design"
-          description="Brand identities that make lasting impressions"
+        <PortfolioGallery
+          items={posterProjects}
+          title="🎨 Poster Design"
+          description="Eye-catching posters for events and campaigns"
         />
 
-       
+        {/* Poster Design Gallery */}
+
+
+
 
         {/* Social Media Content Slider */}
         {/* <PortfolioSlider
@@ -55,11 +68,6 @@ export function PortfolioSection() {
         /> */}
 
         {/* Presentation Design Gallery */}
-        <PortfolioGallery
-          items={posterProjects}
-          title="🎨 Poster Design"
-          description="Eye-catching posters for events and campaigns"
-        />
 
         {/* Website Projects Slider */}
         {websiteProjects.length > 0 && (
