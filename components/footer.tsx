@@ -62,9 +62,9 @@ export function Footer() {
           <div>
             <h3 className="font-semibold mb-4">Get in Touch</h3>
             <div className="space-y-2 text-muted-foreground">
-              <p>john.doe@example.com</p>
-              <p>+1 (555) 123-4567</p>
-              <p>New York, NY</p>
+              <p>farwafaizan334@gmail.com</p>
+              <p>+92 321 2544060</p>
+              <p>Karachi , Pakistan</p>
             </div>
           </div>
         </div>

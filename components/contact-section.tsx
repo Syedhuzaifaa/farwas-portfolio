@@ -69,7 +69,7 @@ const handleSubmit = async (e: React.FormEvent) => {
     {
       icon: Phone,
       label: "Phone",
-      value: "+92 308 8290018",
+      value: "+92 321 2544060",
       href: "",
     },
     {

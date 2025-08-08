@@ -7,67 +7,68 @@ import { motion } from "framer-motion"
 
 export function TestimonialsSection() {
   const testimonials = [
-    {
-      id: 1,
-      name: "Farwa  Johnson",
-      role: "Marketing Director",
-      company: "TechStart Inc.",
-      image: "/placeholder.svg?height=60&width=60",
-      rating: 5,
-      quote:
-        "John delivered an exceptional website that perfectly captured our brand. His attention to detail and creative vision exceeded our expectations.",
-    },
-    {
-      id: 2,
-      name: "Michael Chen",
-      role: "CEO",
-      company: "Digital Solutions",
-      image: "/placeholder.svg?height=60&width=60",
-      rating: 5,
-      quote:
-        "Working with John was a pleasure. He created stunning social media graphics that significantly boosted our engagement rates.",
-    },
-    {
-      id: 3,
-      name: "Emily Rodriguez",
-      role: "Product Manager",
-      company: "InnovateCorp",
-      image: "/placeholder.svg?height=60&width=60",
-      rating: 5,
-      quote:
-        "John's full-stack development skills are impressive. He built our web application from scratch and delivered it on time and within budget.",
-    },
-    {
-      id: 4,
-      name: "David Thompson",
-      role: "Startup Founder",
-      company: "GrowthLab",
-      image: "/placeholder.svg?height=60&width=60",
-      rating: 5,
-      quote:
-        "The logo and brand identity John created for us perfectly represents our company values. Highly recommended for any design work.",
-    },
-    {
-      id: 5,
-      name: "Lisa Wang",
-      role: "Event Coordinator",
-      company: "EventPro",
-      image: "/placeholder.svg?height=60&width=60",
-      rating: 5,
-      quote:
-        "John designed amazing posters for our events. His creative approach and quick turnaround made our collaboration seamless.",
-    },
-    {
-      id: 6,
-      name: "Alex Kumar",
-      role: "Business Owner",
-      company: "Local Restaurant",
-      image: "/placeholder.svg?height=60&width=60",
-      rating: 5,
-      quote:
-        "The presentation design John created helped us secure important investors. His work is professional and impactful.",
-    },
-  ]
+  {
+    id: 1,
+    name: "Ayesha Malik",
+    role: "Marketing Manager",
+    company: "Visionary Brands",
+    image: "/placeholder.svg?height=60&width=60",
+    rating: 5,
+    quote:
+      "Farwa created a stunning logo and complete brand identity for us. Her attention to detail and creative direction truly brought our vision to life.",
+  },
+  {
+    id: 2,
+    name: "Omar Siddiqui",
+    role: "Startup Founder",
+    company: "PitchPoint",
+    image: "/placeholder.svg?height=60&width=60",
+    rating: 5,
+    quote:
+      "The PowerPoint presentation Farwa designed was instrumental in helping us secure funding. It was sleek, professional, and perfectly aligned with our brand.",
+  },
+  {
+    id: 3,
+    name: "Sana Raza",
+    role: "Event Organizer",
+    company: "Creative Minds",
+    image: "/placeholder.svg?height=60&width=60",
+    rating: 5,
+    quote:
+      "Farwa's poster designs made our event stand out. The visuals were vibrant, clear, and captured the essence of our theme beautifully.",
+  },
+  {
+    id: 4,
+    name: "Bilal Khan",
+    role: "Product Manager",
+    company: "NextGen Apps",
+    image: "/placeholder.svg?height=60&width=60",
+    rating: 5,
+    quote:
+      "We hired Farwa to design our mobile app UI, and the results were beyond impressive. Clean layouts, user-friendly interfaces, and a modern look throughout.",
+  },
+  {
+    id: 5,
+    name: "Mehwish Tariq",
+    role: "Small Business Owner",
+    company: "Blossom Boutique",
+    image: "/placeholder.svg?height=60&width=60",
+    rating: 5,
+    quote:
+      "Farwa developed our business website from scratch. It's responsive, elegant, and exactly what we needed to attract more customers online.",
+  },
+  {
+    id: 6,
+    name: "Ali Hamza",
+    role: "Corporate Trainer",
+    company: "SkillBridge",
+    image: "/placeholder.svg?height=60&width=60",
+    rating: 5,
+    quote:
+      "The presentation deck Farwa created was engaging and visually powerful. It kept our audience hooked throughout the session.",
+  },
+];
+
 
   return (
     <section className="py-20">
