@@ -8,6 +8,7 @@ import { PortfolioGallery } from "./portfolio-gallery"
 export function PortfolioSection() {
   const logoProjects = portfolioData.filter((project) => project.category === "logos")
   const figmaProjects = portfolioData.filter((project) => project.category === "figma")
+  const figmasProjects = portfolioData.filter((project) => project.category === "figmas")
   const posterProjects = portfolioData.filter((project) => project.category === "posters")
   const socialMediaProjects = portfolioData.filter((project) => project.category === "social-media")
   const presentationProjects = portfolioData.filter((project) => project.category === "presentations")
@@ -37,6 +38,11 @@ export function PortfolioSection() {
           items={figmaProjects}
           title="📊 Figma UI/UX"
           description="Designing clean, user-friendly interfaces in Figma for web and mobile applications."
+        />
+         <PortfolioSlider
+          items={figmasProjects}
+          title="📊 Figma Posters Design"
+          description="Designing clean, user-friendly interfaces in Figma for Social Media Marketing"
         />
         <PortfolioGallery
           items={logoProjects}

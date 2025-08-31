@@ -274,7 +274,7 @@ useEffect(() => {
                 transition={{ duration: 3, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
               />
               <Image
-                src="/farwa.jpeg?height=200&width=200"
+                src="/farwa.webp?height=200&width=200"
                 alt="Creative Designer"
                 width={200}
                 height={200}
