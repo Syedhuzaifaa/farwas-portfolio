@@ -7,7 +7,6 @@ import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 
 const inter = Inter({ subsets: ["latin"] })
-
 export const metadata: Metadata = {
   title: "Farwa - Creative Designer & Full-Stack Developer",
   description:
@@ -15,12 +14,18 @@ export const metadata: Metadata = {
   keywords: ["designer", "developer", "portfolio", "UI/UX", "web development", "logo design"],
   authors: [{ name: "Farwa " }],
   openGraph: {
-    title: "Farwa  - Creative Designer & Full-Stack Developer",
+    title: "Farwa - Creative Designer & Full-Stack Developer",
     description: "Portfolio showcasing creative design and web development work",
     type: "website",
   },
-    generator: 'v0.dev'
-}
+  generator: "v0.dev",
+  icons: {
+    icon: "📊", // Path from public folder
+    shortcut: "📊",
+    apple: "/apple-touch-icon.png", // optional for iOS
+  },
+};
+
 
 export default function RootLayout({
   children,
