@@ -34,20 +34,31 @@ export function PortfolioSection() {
         </motion.div>
 
         {/* Logo Design Slider */}
+        <PortfolioGallery
+          items={socialMediaProjects}
+          title="📊 Social Media Campaigns"
+          description="Creative and engaging posts designed to elevate brand presence and connect with audiences."
+        />
+        <PortfolioGallery
+          items={logoProjects}
+          title="✨ Logo Designs"
+          description="Distinctive brand identities crafted to leave a lasting impression and reflect core values."
+        />
+
         <PortfolioSlider
           items={figmaProjects}
           title="📊 Figma UI/UX"
           description="Designing clean, user-friendly interfaces in Figma for web and mobile applications."
         />
-         <PortfolioSlider
+        <PortfolioSlider
           items={figmasProjects}
           title="📊 Figma Posters Design"
           description="Designing clean, user-friendly interfaces in Figma for Social Media Marketing"
         />
-        <PortfolioGallery
-          items={logoProjects}
-          title="✨ Logo Design"
-          description="Brand identities that make lasting impressions"
+          <PortfolioGallery
+          items={posterProjects}
+          title="🎨 Poster Design"
+          description="Eye-catching posters for events and campaigns"
         />
         <PortfolioSlider
           items={presentationProjects}
@@ -55,11 +66,7 @@ export function PortfolioSection() {
           description="Professional presentations that communicate effectively"
         />
 
-        <PortfolioGallery
-          items={posterProjects}
-          title="🎨 Poster Design"
-          description="Eye-catching posters for events and campaigns"
-        />
+      
 
         {/* Poster Design Gallery */}
 

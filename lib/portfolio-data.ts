@@ -2,7 +2,7 @@ export interface PortfolioItem {
   id: string
   title: string
   description: string
-  category: "figma" |"figmas" | "logos" | "posters" | "social-media" | "presentations" | "websites"
+  category: "figma" | "figmas" | "logos" | "posters" | "social-media" | "presentations" | "websites"
   image: string
   images?: string[]
   video?: string // <--- Add this
@@ -14,6 +14,36 @@ export interface PortfolioItem {
 
 export const portfolioData: PortfolioItem[] = [
   // Logos
+  {
+    id: "24",
+    title: "Luxury Crown Logo – Prestige & Elegance",
+    description: "A refined logo featuring a crown topped with a diamond, symbolizing power, purity, and timeless prestige. Designed to represent strength, honor, and sophistication with a touch of royal charm",
+    category: "logos",
+    image: "/monare1.webp?height=300&width=400",
+    images: [
+      "/monare1.webp?height=400&width=600&text=LinkedIn+Post+1",
+      "/monare2.webp?height=400&width=600&text=LinkedIn+Post+2",
+      "/monare3.webp?height=400&width=600&text=LinkedIn+Post+3",
+    ],
+    technologies: ["Adobe Illustrator"],
+    year: "2024",
+  },
+  {
+    id: "1",
+    title: "SYRAE Logo – Nature & Modern Identit",
+    description: "A creative wordmark logo where a tulip flower and petal are integrated into the typography, symbolizing growth, beauty, and natural elegance. Perfectly blending modern minimalism with organic inspiration.",
+    category: "logos",
+    image: "/syrae6.webp?height=300&width=400",
+    images: [
+      "/syrae1.webp?height=400&width=600&text=LinkedIn+Post+1",
+      "/syrae2.webp?height=400&width=600&text=LinkedIn+Post+2",
+      "/syrae3.webp?height=400&width=600&text=LinkedIn+Post+3",
+      "/syrae5.webp?height=400&width=600&text=LinkedIn+Post+4",
+      "/syrae6.webp?height=400&width=600&text=LinkedIn+Post+5",
+    ],
+    technologies: ["Adobe Illustrator",],
+    year: "2024",
+  },
   {
     id: "1",
     title: "Beads Shop Logo – Classic Design",
@@ -43,6 +73,24 @@ export const portfolioData: PortfolioItem[] = [
   },
 
   // Posters
+  {
+    id: "29",
+    title: "Ice Cream Poster Design",
+    description: "A vibrant and refreshing poster design created to promote ice cream products, highlighting freshness, flavor, and indulgence for brand campaigns.",
+    category: "posters",
+    image: "/icecream.webp?height=300&width=400",
+    technologies: ["Adobe Photoshop", "Illustrator"],
+    year: "2024",
+  },
+  {
+    id: "30",
+    title: "Wednesday Netflix Series Poster",
+    description: "A bold and creative poster inspired by the Netflix series 'Wednesday,' designed to capture the show's mysterious and gothic aesthetic for social media promotion.",
+    category: "posters",
+    image: "/webnesday.webp?height=300&width=400",
+    technologies: ["Adobe Photoshop", "Illustrator"],
+    year: "2024",
+  },
   {
     id: "4",
     title: "Website Development Course Poster",
@@ -81,46 +129,69 @@ export const portfolioData: PortfolioItem[] = [
   },
   // Social Media
   {
-    id: "7",
-    title: "LinkedIn Post Series",
-    description: "Engaging LinkedIn post templates for business content, designed for maximum reach.",
+    id: "26",
+    title: "Homemade Food Campaign",
+    description: "Engaging social media post design for Lunch Box From Home, emphasizing healthy, affordable, and homemade meals delivered anywhere.",
     category: "social-media",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/lunchbox1.webp",
     images: [
-      "/placeholder.svg?height=400&width=600&text=LinkedIn+Post+1",
-      "/placeholder.svg?height=400&width=600&text=LinkedIn+Post+2",
-      "/placeholder.svg?height=400&width=600&text=LinkedIn+Post+3",
+      "/lunchbox1.webp",
+      "/lunchbox2.webp",
+      "/lunchbox3.webp",
+      "/lunchbox4.webp",
+      "/lunchbox5.webp",
+      "/lunchbox6.webp",
     ],
-    technologies: ["Canva", "Figma"],
+    technologies: ["Adobe Photoshop", "Illustrator"],
     year: "2024",
   },
   {
-    id: "8",
-    title: "Instagram Story Templates",
-    description: "Branded Instagram story templates for social media marketing, dynamic and interactive.",
+    id: "27",
+    title: "Desi Food Restaurant Campaign",
+    description: "Creative post design for a desi food restaurant, showcasing traditional flavors and authentic meals to attract food lovers on social media.",
     category: "social-media",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/desi7.webp",
     images: [
-      "/placeholder.svg?height=400&width=600&text=Instagram+Story+1",
-      "/placeholder.svg?height=400&width=600&text=Instagram+Story+2",
+      "/desi7.webp",
+      "/desi6.webp",
+      "/desi8.webp",
+      "/desi9.webp",
+      "/desi1.webp",
     ],
-    technologies: ["Canva", "Adobe Photoshop"],
+    technologies: ["Adobe Photoshop", "Illustrator"],
     year: "2024",
   },
   {
-    id: "9",
-    title: "Facebook Ad Campaign",
-    description: "Social media graphics for Facebook advertising campaign, optimized for conversions.",
+    id: "31",
+    title: "Logistix LinkDin Carousel",
+    description: "Creative post design for a LogisTix Educational Purpose.",
     category: "social-media",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/logistixlinkdin2.webp",
     images: [
-      "/placeholder.svg?height=400&width=600&text=Facebook+Ad+1",
-      "/placeholder.svg?height=400&width=600&text=Facebook+Ad+2",
+      "/logistixlinkdin4.webp",
+      "/logistixlinkdin2.webp",
+      "/logistixlinkdin3.webp",
+      "/logistixlinkdin1.webp",
+      "/logistixlinkdin5.webp",
+      "/logistixlinkdin6.webp",
+      "/logistixlinkdin7.webp",
+      "/logistixlinkdin8.webp",
+      "/logistixlinkdin9.webp",
     ],
-    technologies: ["Canva", "Figma"],
-    year: "2023",
+    technologies: ["Adobe Photoshop", "Illustrator"],
+    year: "2024",
   },
+  {
+    id: "28",
+    title: "Logistix Client",
+    description: "A clean and professional design project developed for Logistix, focusing on corporate branding and social media presence. The visuals emphasize trust, reliability, and modern logistics solutions, with consistent typography and structured layouts.",
+    category: "social-media",
+    image: "/POST 5.webp",
+    images: ["POST 1.webp", "POST 2.webp", "POST 3.webp", "POST 4.webp", "POST 5.webp", "POST 6.webp", "POST 7.webp", "POST 8.webp", "POST 9.webp", "POST 10.webp"],
 
+    technologies: ["Adobe Illustrator"],
+    year: "2024",
+  },
   // Presentations
   {
     id: "10",
@@ -268,18 +339,18 @@ export const portfolioData: PortfolioItem[] = [
     liveUrl: "https://www.figma.com/proto/NLMAi95BxeQOQ1UUBk3xRi/Icecream-Prototype?node-id=4-120&p=f&t=4UwtCAT3wkWV1ck0-0&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=4%3A120",
     year: "2024",
   },
-{
+  {
     id: "21",
     title: "Logistix Client",
     description: "A clean and professional design project developed for Logistix, focusing on corporate branding and social media presence. The visuals emphasize trust, reliability, and modern logistics solutions, with consistent typography and structured layouts.",
     category: "figmas",
     image: "/brocher2.webp",
-    images: [ "brocher2.webp", "brocher.webp","POST 1.webp","POST 2.webp","POST 3.webp","POST 4.webp","POST 5.webp","POST 6.webp","POST 7.webp","POST 8.webp","POST 9.webp","POST 10.webp"],
+    images: ["brocher2.webp", "brocher.webp", "POST 1.webp", "POST 2.webp", "POST 3.webp", "POST 4.webp", "POST 5.webp", "POST 6.webp", "POST 7.webp", "POST 8.webp", "POST 9.webp", "POST 10.webp"],
     technologies: ["Figma"],
     liveUrl: "",
     year: "2024",
-},
-{
+  },
+  {
     id: "22",
     title: "APP redesign",
     description: "A modern and intuitive mobile app redesign focused on enhancing user experience and visual appeal. The project showcases sleek UI elements, improved navigation flow, and a consistent design system tailored for e-commerce functionality. ",
@@ -288,18 +359,18 @@ export const portfolioData: PortfolioItem[] = [
     technologies: ["Figma", "Framer Motion"],
     liveUrl: "",
     year: "2024",
-},
+  },
   {
     id: "23",
     title: "Cattle Farm Client",
     description: "A vibrant and nature-inspired branding design created for a cattle farm. The project focuses on fresh, organic aesthetics with playful yet professional visuals that highlight the authenticity of farm products.",
     category: "figmas",
     image: "/Section2.webp",
-    images: [ "/Section2.webp", "/Instagrampost-4.webp", "/Instagrampost-5.webp", "/Frame3.webp"],
+    images: ["/Section2.webp", "/Instagrampost-4.webp", "/Instagrampost-5.webp", "/Frame3.webp"],
     technologies: ["Figma", "Framer Motion"],
     liveUrl: "",
     year: "2024",
-},
+  },
 
 
   // {
