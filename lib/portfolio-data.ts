@@ -128,6 +128,19 @@ export const portfolioData: PortfolioItem[] = [
     year: "2023",
   },
   // Social Media
+   {
+    id: "32",
+    title: "Lunar Wireless Headphones Poster Design",
+    description: "Modern and stylish poster designs created for Lunar, showcasing premium wireless headphones with features.",
+    category: "social-media",
+    image: "/lunar2.webp",
+    images: [
+      "/lunar2.webp",
+      "/lunar1.webp",
+    ],
+    technologies: ["Adobe Photoshop", "Illustrator"],
+    year: "2024",
+  },
   {
     id: "26",
     title: "Homemade Food Campaign",
